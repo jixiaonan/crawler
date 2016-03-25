@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - DragonTiger@localhost" uuid="d757f4d3-9798-4d39-9783-83f7a8ab191c">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="DragonTiger"/>
+      <table id="2" parent="1" name="stock_Statistic"/>
+      <column id="3" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="4" parent="2" name="sortNumber">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="5" parent="2" name="code">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="6" parent="2" name="name">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="7" parent="2" name="link">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="8" parent="2" name="turnover">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="9" parent="2" name="rankingFreq">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="10" parent="2" name="buyAmount">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="11" parent="2" name="sellAmount">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="12" parent="2" name="netAmount">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="13" parent="2" name="statPeriod">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="14" parent="2" name="addDate">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="15" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" debug="true">
+    <!--打印logback初始化日志系统信息，debug="true"是同等效果-->
+    <!--<statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener"/>-->
+    <!--控制台打印-->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+            </pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!--第三方组件的日志级别，修改为DEBUG，方便调试-->
+    <!--即使root的级别比level高，日志仍将被打印 -->
+    <logger name="utils" level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <!--Root级别为只指定控制台输出-->
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>  
